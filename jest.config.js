@@ -1,7 +1,12 @@
 module.exports = {
-    reporters: [
-      [ 'jest-junit', {
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        includeConsoleOutput: true,
         outputName: 'output.xml',
-      } ]
-    ]
-  };
+      },
+    ],
+  ],
+}
